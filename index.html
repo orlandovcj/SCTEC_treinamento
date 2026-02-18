@@ -1,71 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orlando Castro</title>
+    <title>Portfólio - Orlando Vieira de Castro Junior</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Orlando Castro</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-
+    <header id="topo">
+        <div class="container header-content">
+            <h1>Orlando Vieira de Castro Junior</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <img src="https://avatars.githubusercontent.com/u/69274971?v=4" alt="">
-        <article>
-            <p>
-                Olá! Meu nome é Orlando e eu sou desenvolvedor WEB.
-            </p>
-        </article>
+    <main>
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="secao">
+            <div class="container sobre-content">
+                <div class="sobre-foto">
+                    <img src="https://avatars.githubusercontent.com/u/69274971?v=4" alt="Foto de Orlando Castro">
+                </div>
+                <div class="sobre-texto">
+                    <h2>Sobre mim</h2>
+                    <p>
+                        Meu nome é Orlando Castro e desde sempre fui apaixonado por tecnologia.
+                        Já passei dos 50 anos de idade e, nesse tempo, tive oportunidade de aprender várias coisas legais:
+                        desde como operar os primeiros computadores com Windows 3.1, passando pelas linguagens Basic, Pascal,
+                        Visual Basic, Clipper, Java e Python, até as tecnologias mais recentes baseadas em HTML, CSS,
+                        JavaScript e Inteligência Artificial.
+                    </p>
+                    <p>
+                        Sou muito curioso e estou sempre aprendendo e experimentando coisas novas, buscando aplicar esse
+                        conhecimento em projetos que gerem valor real para as pessoas ao meu redor.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <aside>
-            <h3>Habilidades</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </aside>
-    </section>
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="secao secao-alternada">
+			<div class="container">
+				<h2>Habilidades</h2>
+				<ul class="lista-habilidades">
+					<li data-descricao="Forte para automação de tarefas, análise de dados e integração entre sistemas, reduzindo trabalho manual e erros em processos repetitivos. Também é muito usado no desenvolvimento de APIs e em projetos de inteligência artificial, permitindo criar soluções mais inteligentes e escaláveis para o negócio.">
+						Python
+					</li>
+					<li data-descricao="Linguagem amplamente utilizada em sistemas corporativos e aplicativos Android, ideal para aplicações que exigem robustez e manutenção a longo prazo. Sua forte orientação a objetos e o vasto ecossistema de bibliotecas facilitam a construção de soluções seguras, modulares e de alta disponibilidade.">
+						Java
+					</li>
+					<li data-descricao="Essencial para desenvolvimento web moderno, permitindo criar interfaces interativas, formulários dinâmicos e componentes que melhoram a experiência do usuário no navegador. Também pode ser usado no back-end com Node.js, possibilitando aplicações completas com a mesma linguagem em cliente e servidor.">
+						JavaScript
+					</li>
+					<li data-descricao="Banco de dados relacional muito utilizado para armazenar e consultar informações de forma estruturada em aplicações web e sistemas internos. Com bom domínio de SQL, é possível criar relatórios, indicadores e consultas otimizadas que apoiam a tomada de decisão e o desempenho da aplicação.">
+						MySQL
+					</li>
+					<li data-descricao="Linguagem base da estrutura de qualquer página web, responsável por organizar títulos, textos, imagens e seções de forma semântica. Um bom uso de HTML melhora acessibilidade, SEO e facilita o trabalho em equipe com designers e outros desenvolvedores.">
+						HTML
+					</li>
+					<li data-descricao="Utilizado para definir o visual das páginas, controlando cores, fontes, espaçamentos, responsividade e animações. Um bom domínio de CSS permite criar interfaces mais agradáveis, modernas e adaptadas a diferentes tamanhos de tela, melhorando a experiência do usuário.">
+						CSS
+					</li>
+					<li data-descricao="Permite conectar sensores e atuadores ao mundo físico, criando soluções como monitoramento remoto, automação residencial e pequenos robôs. Essas aplicações interessam a empresas que buscam prototipar dispositivos inteligentes, reduzir custos operacionais e explorar novas oportunidades em automação e IoT.">
+						Aplicações em robótica e IoT usando Arduíno
+					</li>
+				</ul>
 
-    <section id="projetos">
-        <article>
+				<div id="habilidade-descricao" class="habilidade-descricao">
+					Passe o mouse sobre uma habilidade para ver mais detalhes.
+				</div>
+			</div>
+		</section>
 
-            <h2>Portfólio</h2>
-            <p>
-                Este é o meu primeiro projeto de página HTML estudando front-end.
-            </p>
-        </article>
-    </section>
+        <!-- PORTFÓLIO / PROJETOS -->
+        <section id="portfolio" class="secao">
+            <div class="container">
+                <h2>Projetos</h2>
+                <div class="portfolio-grid">
+                    <!-- Projeto 1 -->
+                    <article class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./img/marinasclub.png" alt="Ilustração do projeto Marinas Club">
+                        </div>
+                        <h3>Marinas Club</h3>
+                        <p>
+                            Aplicativo de e-commerce destinado aos moradores do bairro onde moro.
+                            Neste aplicativo, os moradores podem oferecer produtos e serviços para outros moradores,
+                            fomentando um núcleo de economia solidária local.
+                        </p>
+                    </article>
 
-    <section>
+                    <!-- Projeto 2 -->
+                    <article class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./img/privado.png" alt="Ilustração do projeto Privado">
+                        </div>
+                        <h3>Privado</h3>
+                        <p>
+                            Aplicativo de mensagens para celular (Android e iOS) com forte ênfase em privacidade e segurança,
+                            oferecendo comunicação protegida para usuários que valorizam a confidencialidade de seus dados.
+                        </p>
+                    </article>
 
-        <footer>
-            <p>Direitos reervados a Orlando Castro</p>
-            <section id="contato">
-                <h2>Contatos</h2>
-                <p>Tem um projeto em mente? Entre em contato.</p>
+                    <!-- Projeto 3 -->
+                    <article class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./img/duckhunt.png" alt="Ilustração do jogo Duck Hunt">
+                        </div>
+                        <h3>Duck Hunt</h3>
+                        <p>
+                            Jogo simples para membros do grupo SketchArt no Telegram, no qual os jogadores podem usar tokens
+                            mantidos na blockchain WAX para comprar itens ingame.
+                            Acesse em:
+                            <a href="https://www.brsketch.art/duckhunt" target="_blank" rel="noopener noreferrer">
+                                https://www.brsketch.art/duckhunt
+                            </a>.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <address>
-                    E-mail: <a href="mailto:orlandovcj@gmail.com">orlandovcj@gmail.com</a> <br>
-                    Telefone: <a href="tel:+5548996467123">48 99646-7423</a>
-                </address>
-            </section>
+        <!-- CONTATOS -->
+        <section id="contatos" class="secao secao-alternada">
+            <div class="container">
+                <h2>Meus Contatos</h2>
+                <div class="contatos-grid">
+                    <div class="contato-item">
+                        <h3>E-mail</h3>
+                        <p>
+                            <a href="mailto:orlandovcj@gmail.com">orlandovcj@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contato-item">
+                        <h3>WhatsApp</h3>
+                        <p>
+                            <a href="https://wa.me/5548996467423" target="_blank" rel="noopener noreferrer">
+                                +55 (48) 99646-7423
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        </footer>
-    </section>
-
+    <footer>
+        <div class="container rodape-content">
+            <p>&copy; 2026 - Portfólio de Orlando Vieira de Castro Junior</p>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </div>
+    </footer>
+	<script src="script.js"></script>
 </body>
-
 </html>
