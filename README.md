@@ -1,0 +1,76 @@
+# Documentação do Projeto – Portfólio Pessoal
+
+**Autor:** Orlando Vieira de Castro Junior
+
+## 1. Objetivo do Projeto
+
+Este projeto tem como objetivo desenvolver uma landing page funcional de portfólio pessoal, alinhada às especificações da atividade prática extra do curso "Introdução à Programação Front-End e Back-End".
+
+A página foi pensada para apresentar, de forma organizada, o nome do estudante, uma breve descrição pessoal, suas principais habilidades técnicas e um conjunto de projetos relevantes ou representativos de sua atuação em tecnologia.
+
+Além de cumprir os requisitos da atividade, o site foi estruturado para poder ser usado futuramente como base de apresentação profissional, podendo ser expandido com novos projetos e informações adicionais ao longo do tempo.
+
+## 2. Estrutura Geral da Página
+
+O projeto é composto por uma página principal `index.html`, uma folha de estilos externa `styles.css` e um arquivo de script `script.js`, além desta documentação em formato `.txt`.
+
+A landing page está dividida nas seguintes seções principais:
+- Cabeçalho com menu de navegação
+- Seção "Sobre mim"
+- Seção "Habilidades"
+- Seção "Projetos" (portfólio)
+- Seção "Meus Contatos"
+- Rodapé com informações adicionais e link para retornar ao topo
+
+O layout utiliza um design responsivo, em tons de azul, adaptando-se a diferentes larguras de tela (desktop, tablet e celulares) por meio de flexbox e media queries no CSS.
+
+## 3. Tecnologias Utilizadas
+
+As tecnologias empregadas foram:
+
+- **HTML5**: para estruturar o conteúdo da página, definindo cabeçalho, seções, listas, links e demais elementos semânticos.
+- **CSS3**: para aplicar estilos visuais, cores em tons de azul, sombras, espaçamentos, tipografia, responsividade e efeitos de transição.
+- **JavaScript**: para adicionar interatividade, como o efeito de destaque nos cards de projetos e o comportamento dinâmico da seção de habilidades.
+
+## 4. Descrição das Seções
+
+### 4.1 Cabeçalho e Navegação
+
+No topo da página, o cabeçalho exibe o nome completo "Orlando Vieira de Castro Junior" e um menu de navegação com links âncora para as seções: "Sobre mim", "Habilidades", "Projetos" e "Contatos".
+
+O cabeçalho utiliza fundo em gradiente azul e permanece fixo no topo (position: sticky), facilitando o acesso rápido às diferentes partes do portfólio.
+
+### 4.2 Seção "Sobre mim"
+
+Esta seção apresenta uma foto do autor ao lado de um texto de apresentação, descrevendo sua trajetória e interesse de longa data por tecnologia, desde os primeiros computadores com Windows 3.1 até linguagens modernas e aplicações em inteligência artificial.
+
+O texto destaca a curiosidade, a disposição para aprender continuamente e a variedade de linguagens e ferramentas com as quais o autor já teve contato, reforçando seu perfil de aprendizado constante.
+
+### 4.3 Seção "Habilidades"
+
+Na seção de habilidades, é exibida uma lista com as seguintes competências: Python, Java, JavaScript, MySQL, HTML, CSS e aplicações em robótica e IoT usando Arduíno.
+
+Cada item é apresentado como um "chip" estilizado e interativo. Ao passar o mouse sobre uma habilidade, um script em JavaScript adiciona uma classe de destaque ao item e exibe, em uma div logo abaixo, uma descrição textual mais detalhada sobre aplicações práticas daquela habilidade e possíveis benefícios para um contratante.
+
+Dessa forma, a seção funciona como um pequeno "guia" resumido das capacidades técnicas do autor, ajudando recrutadores ou avaliadores a entenderem rapidamente o foco de atuação e o potencial de uso dessas competências em projetos reais.
+
+### 4.4 Seção "Projetos" (Portfólio)
+
+A seção de portfólio apresenta três projetos em caixas (cards) posicionadas lado a lado em telas maiores, reorganizando-se automaticamente em dispositivos menores:
+
+- **Marinas Club**: aplicativo de e-commerce para moradores do bairro, voltado à economia solidária local.
+- **Privado**: aplicativo de mensagens para Android e iOS com foco em privacidade e segurança.
+- **Duck Hunt**: jogo simples para o grupo SketchArt no Telegram, que utiliza tokens na blockchain WAX para compra de itens ingame, incluindo link para demonstração.
+
+Cada projeto é exibido em um card com uma ilustração (imagem de placeholder), título e texto descritivo, obedecendo ao requisito de apresentar nome, breve descrição e link quando existir.
+
+Um efeito visual adicional foi implementado com JavaScript: ao passar o mouse sobre cada card, uma classe é adicionada e o CSS aplica um leve "elevado" com transformação e sombra mais intensa, chamando a atenção para o projeto em foco.
+
+### 4.5 Seção "Meus Contatos"
+
+Nesta seção, são apresentados os principais canais de contato:
+
+- **E-mail**: link mailto para `orlandovcj@gmail.com`.
+- **WhatsApp**: link para o número `+55 48 99646-7423` usando o formato `https://wa.me/`.
+
+Os contatos são organizados em caixas com título e link clicável, permitindo que um interessado entre em contato rapidamente para oportunidades profissionais, dúvidas ou propostas de projeto.
